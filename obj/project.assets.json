@@ -7602,11 +7602,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Bank  Transactions\\Bank  Transactions.csproj",
+      "projectUniqueName": "G:\\Bank-Transaction\\Bank  Transactions.csproj",
       "projectName": "Bank  Transactions",
-      "projectPath": "G:\\Bank  Transactions\\Bank  Transactions.csproj",
+      "projectPath": "G:\\Bank-Transaction\\Bank  Transactions.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "G:\\Bank  Transactions\\obj\\",
+      "outputPath": "G:\\Bank-Transaction\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
