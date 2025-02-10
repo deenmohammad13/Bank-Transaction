@@ -4,11 +4,9 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>PassBook</h1>
 
-<p>
-    <a asp-action="AddOrEdit">Create New</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -18,19 +16,17 @@
             <th>
                 @Html.DisplayNameFor(model => model.BeneficiaryName)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BankName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SWIFTCode)
-            </th>
+            
             <th>
                 @Html.DisplayNameFor(model => model.Amount)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Date)
             </th>
-            <th></th>
+            <th>
+                <a asp-action="AddOrEdit" class="btn btn-sm btn-success"> 
+                <i class="fa-solid fa-plus"></i>New</a>
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -42,12 +38,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.BeneficiaryName)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BankName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SWIFTCode)
-            </td>
+            
             <td>
                 @Html.DisplayFor(modelItem => item.Amount)
             </td>
@@ -56,7 +47,6 @@
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.TransactionId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TransactionId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.TransactionId">Delete</a>
             </td>
         </tr>
